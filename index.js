@@ -22,7 +22,7 @@ try {
         return;
     }
 
-    const slash = (process.env['OS'] != 'Windows_NT') ? '\\' : '/'
+    const slash = (process.env['OS'] != 'Windows_NT') ? '/' : '\\';
     const homeSsh = homePath + `${slash}.ssh`;
     fs.mkdirSync(homeSsh, { recursive: true });
 
